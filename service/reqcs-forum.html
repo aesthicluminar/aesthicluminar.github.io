@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Informasi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #0000ff); /* Gradien biru dan hitam */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #555;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Informasi Penting</h1>
+  <p>Ini adalah informasi penting yang perlu Anda ketahui. Silakan baca dengan seksama.</p>
+  <img src="sky.jpg" alt="Langit" style="width: 100%; max-width: 400px;">
+  <h2>Formulir Pengisian</h2>
+  <form action="https://formspree.io/meqyrrnw" method="post">
+    <label for="nama">UCP:</label><br>
+    <input type="text" id="nama" name="UCP" placeholder="Masukkan UCP anda." required><br>
+    <label for="Karakter">Nama IC:</label><br>
+    <input type="text" id="karakter" name="Nama_IC" placeholder="Nama_Karakter" required><br>
+    <label for="linkcs">Link CS:</label><br>
+    <input type="text" id="linkcs" name="Link_CS" placeholder="Gunakan link dari www.pastebin.com lalu tempelkan disini." required><br>
+    <label for="linkstats">Link Stats:</label><br>
+    <input type="text" id="linkstats" name="Link_Stats" placeholder="Gunakan link dari id.imgBB.com lalu tempelkan disini." required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<!-- Tombol untuk kembali ke halaman sebelumnya -->
+<button onclick="goBack()">Kembali</button>
+
+<script>
+// Fungsi untuk kembali ke halaman sebelumnya
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>
